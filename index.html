@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/Javascript" src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columna1__logo">
+            <img class="logo_alura" src="./assets/Logo.png">
+        </div>
+        <div class="columna2__ingreso_datos">
+
+            <input id="texto_a_trabajar" placeholder="Ingrese el texto aqui" class="container__input" />
+
+            <div class="mensaje_encriptador">
+                <!-- <i class="bi bi-exclamation-circle-fill"></i>-->
+                <p id="mensajeIngreso" class="presentacion_mensaje_info"> Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones_accion">
+                <a class="container__boton boton_blue" href="javascript:encriptarTexto();">Encriptar</a>
+                <a class="container__boton boton_blue_ligth" href="javascript:desencriptarTexto();">Desencriptar</a>
+            </div>
+
+        </div>
+        <div class="columna3__resultado">
+            <div id="mostrarResultado" class="encriptar_resultado">
+                <div class="item1">
+                    <p id="resultado_encriptacion">
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="item2">
+                    <a href="javascript:copiarPortapapeles();" class="container__boton boton_blue_resultado"
+                        href="">Copiar</a>
+                </div>
+            </div>
+            <div id="mostarMensajeCaja" class="encriptador_erroneo">
+                <img class="presentasion_imagen" src="./assets/Muñeco.png">
+                <p class="presentasion_contenido_titulo">Ningún mensaje fue encontrado</p>
+                <p class="presentasion_contenido_parafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Desarrollado por Eduardo Sepúlveda Burgos</p>
+    </footer>
+</body>
+
+</html>
