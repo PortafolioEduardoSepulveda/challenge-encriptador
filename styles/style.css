@@ -227,6 +227,16 @@ body {
 
 }
 
+.icon_exclamacion {
+    color: var(--color-terciaria);
+
+}
+
+.icon_exclamacion_red {
+    color: red;
+
+}
+
 @media screen and (max-width: 800px) {
     .container {
         display: flex;
@@ -286,6 +296,7 @@ body {
     }
 
     .mensaje_encriptador {
+        width: 100%;
         padding-left: 10px;
     }
 

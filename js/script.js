@@ -34,7 +34,7 @@ function encriptarTexto() {
 
     mostraMensajesHtml("mostrarResultado", 0);
     mostraMensajesHtml("mostarMensajeCaja", 1);
-    document.getElementById("mensajeIngreso").innerHTML = "Solo letras minúsculas y sin acentos";
+    document.getElementById("mensajeIngreso").innerHTML = " <i class='bi bi-exclamation-circle-fill icon_exclamacion'></i> Solo letras minúsculas y sin acentos";
     document.getElementById('mensajeIngreso').classList.remove('presentacion_mensaje_info_red');
     document.getElementById('mensajeIngreso').classList.add('presentacion_mensaje_info');
     return;
@@ -55,7 +55,7 @@ function desencriptarTexto() {
 
     let campoMensaje = document.getElementById("resultado_encriptacion");
     campoMensaje.innerHTML = textoDesencriptado;
-    document.getElementById("mensajeIngreso").innerHTML = "Solo letras minúsculas y sin acentos";
+    document.getElementById("mensajeIngreso").innerHTML = " <i class='bi bi-exclamation-circle-fill icon_exclamacion'></i> Solo letras minúsculas y sin acentos";
     document.getElementById('mensajeIngreso').classList.remove('presentacion_mensaje_info_red');
     document.getElementById('mensajeIngreso').classList.add('presentacion_mensaje_info');
 
@@ -67,7 +67,7 @@ function validaCampo() {
     let texto_a_trabajar = document.getElementById("texto_a_trabajar");
     if (texto_a_trabajar.value == "") {
         texto_a_trabajar.focus();
-        document.getElementById("mensajeIngreso").innerHTML = "Debe Ingresar Datos";
+        document.getElementById("mensajeIngreso").innerHTML = " <i class='bi bi-exclamation-circle-fill icon_exclamacion_red'></i> Debe Ingresar Datos";
         document.getElementById('mensajeIngreso').classList.remove('presentacion_mensaje_info');
         document.getElementById('mensajeIngreso').classList.add('presentacion_mensaje_info_red');
         return false;
@@ -79,7 +79,7 @@ function validaCampo() {
     console.log("validacion texto " + strRegex.test(texto_a_trabajar.value));
     if (strRegex.test(texto_a_trabajar.value)) {
         texto_a_trabajar.focus();
-        document.getElementById("mensajeIngreso").innerHTML = "Debe Ingresar minusculas o numeros";
+        document.getElementById("mensajeIngreso").innerHTML = " <i class='bi bi-exclamation-circle-fill icon_exclamacion_red'></i> Debe Ingresar minusculas o numeros";
         document.getElementById('mensajeIngreso').classList.remove('presentacion_mensaje_info');
         document.getElementById('mensajeIngreso').classList.add('presentacion_mensaje_info_red');
         return false;
@@ -92,7 +92,7 @@ function limpiar() {
     document.getElementById("resultado_encriptacion").innerHTML = "";
     mostraMensajesHtml("mostarMensajeCaja", 0);
     mostraMensajesHtml("mostrarResultado", 1);
-    document.getElementById("mensajeIngreso").innerHTML = "Solo letras minúsculas y sin acentos";
+    document.getElementById("mensajeIngreso").innerHTML = " <i class='bi bi-exclamation-circle-fill icon_exclamacion'></i> Solo letras minúsculas y sin acentos";
     document.getElementById('mensajeIngreso').classList.remove('presentacion_mensaje_info_red');
     document.getElementById('mensajeIngreso').classList.add('presentacion_mensaje_info');
 
